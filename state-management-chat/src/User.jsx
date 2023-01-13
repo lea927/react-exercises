@@ -1,7 +1,20 @@
 import "./App.css";
 import Messages from "./Messages";
 
-function User({ username, messages }) {
+const messages = [
+  { username: "Franklin", text: "Hi, Michael!" },
+  { username: "Franklin", text: "How are you?" },
+  { username: "Michael", text: "Hi, Franklin! Good, you?" },
+ ];
+
+const createMessage = (message) => {};
+
+// If the user did not type anything, he/she should not be allowed to submit.
+const isDisabled = () => {
+  return false;
+};
+
+function User({ username }) {
  return (
   <>
    <div className='chat-window'>
