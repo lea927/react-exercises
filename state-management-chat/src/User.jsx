@@ -1,5 +1,6 @@
 import "./App.css";
 import Messages from "./Messages";
+import SendMessage from "./SendMessage";
 
 const messages = [
   { username: "Franklin", text: "Hi, Michael!" },
@@ -21,6 +22,7 @@ function User({ username }) {
     <h2>Chat</h2>
     <div className='name sender'>{username}</div>
     <Messages messages={messages} username={username} />
+    <SendMessage/>
    </div>
   </>
  );
